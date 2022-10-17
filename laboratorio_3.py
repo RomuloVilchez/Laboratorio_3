@@ -1,7 +1,10 @@
 #El entorno es funcional se implemento o corrigio la funcion que permite expandir los nodos hijos al resto de elementos 
-#se puede añadir mas numeros pero lo que mas cuenta es el tiempo de ejecucion del mismo
+#EL tiempo de ejecucion con 7 unidades es menor a 3 minutos estando este en el estado mas lejano al resultado
+# Añadiendo una sola unidad el tiempo de ejecucion supera los 20 min sin mostrar el resultado esto se debe 
+#a los nodos hijos siguen expandiendose generando varios movimientos repetidos 
+# para solucionar esto se podria utilizar busquedas informadas añadir una condicion indicando que movimientos se estan repitiendo  
+#Haciedo correr el el LIFO el resultado es que va eliminando el ultimo digito de los nodos hijos
 
-# datos = estado
 class Nodo:
     def __init__(self, datos, hijo=None):
         self.datos = datos
