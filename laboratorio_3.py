@@ -101,7 +101,6 @@ if __name__ == "__main__":
 
     resultado.append(estado_inicial)
     resultado.reverse()
-    print("*****"*10)
     #print('\n',resultado)
     print('Movimientos : \n')
     for i in range(len(resultado)):
